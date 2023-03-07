@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import { useDispatch } from "react-redux";
 import { PulseLoader } from "react-spinners";
 import { useSelector } from "react-redux";
-import { selectContacts, selectFilter  } from "components/redux/selectors";
+import { selectContacts, selectFilter  } from "redux/selectors";
 import { useEffect } from "react";
-import { fetchContacts, deleteContact } from "components/redux/operations";
+import { fetchContacts, deleteContact } from "redux/operations";
 
 export const ContactList = ( ) => {
   

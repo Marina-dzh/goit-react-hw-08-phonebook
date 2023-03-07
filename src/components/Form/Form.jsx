@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addContact } from "../../redux/operations"
 import { toast } from 'react-hot-toast';
 
-import { selectContacts } from "redux/selectors";
+import { selectContacts } from "../../redux/selectors";
 
 
 const initialValues = {

@@ -2,6 +2,7 @@
 import { Input, Text } from "./Filter.styled"
 import { setStatusFilter } from "../../redux/filterSlice"
 
+
 import { useDispatch } from "react-redux";
  
 export const Filter = () => {

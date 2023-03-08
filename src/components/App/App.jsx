@@ -5,13 +5,13 @@ import React from "react";
 // import { Container } from "./App.styled";
 // import { Toaster } from 'react-hot-toast';
 
-import { useEffect, lazy } from 'react';
-import { useDispatch } from 'react-redux';
+import {  lazy } from 'react';
+// import { useDispatch } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
 import { Layout } from '../Layout';
 import { PrivateRoute } from '../PrivateRoute';
 import { RestrictedRoute } from '../RestrictedRoute';
-import { refreshUser } from '../../redux/operations';
+// import { refreshUser } from '../../redux/operations';
 import { useAuth } from '../../hooks/useAuth';
 
 
@@ -23,7 +23,7 @@ const ContactsPage = lazy(() => import('../../pages/Contacts'));
 
 export const App = () => {
 
-   const dispatch = useDispatch();
+   
   const { isRefreshing } = useAuth();
 
   return isRefreshing ? (

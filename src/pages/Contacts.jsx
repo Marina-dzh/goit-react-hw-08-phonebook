@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+// import { useEffect } from 'react';
+import {  useSelector } from 'react-redux';
 import { Helmet } from 'react-helmet';
 import { ContactForm } from "../components/Form/Form";
 import { ContactList } from '../components/List/List';
@@ -10,7 +10,7 @@ import { Toaster } from 'react-hot-toast';
 import { selectLoading } from '../redux/selectors';
 
 export default function Contacts() {
-  const dispatch = useDispatch();
+//   const dispatch = useDispatch();
   const isLoading = useSelector(selectLoading);
 
 //   useEffect(() => {

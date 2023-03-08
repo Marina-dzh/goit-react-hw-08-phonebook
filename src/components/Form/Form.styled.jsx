@@ -3,6 +3,7 @@
 import { Field ,ErrorMessage} from 'formik'
 export const Input = styled(Field)`
 height: 20px;
+width: 200px;
 border-radius: 4px;
 border: 1px solid;
    :hover{
@@ -20,7 +21,7 @@ export const Error= styled(ErrorMessage)`
 export const  Button= styled.button`
     height: 26px;
 border-radius: 4px;
-margin-top: 20px;
+margin: 20px;
 border: 1px solid;
  :hover{
     border-color: black;

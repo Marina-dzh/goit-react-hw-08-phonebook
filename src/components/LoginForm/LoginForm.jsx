@@ -3,7 +3,7 @@ import { logIn } from '../../redux/operations';
 // import css from './LoginForm.module.css';
 import * as yup from 'yup';
 import { Error, Input, Button  } from 'components/Form/Form.styled';
-
+import { Container } from "../App/App.styled";
 import { Formik, Form,   } from "formik";
 const initialValues = {
 
@@ -29,7 +29,7 @@ export const LoginForm = () => {
   };
 
     return (
-      
+      <Container>
 <Formik initialValues= {initialValues} onSubmit={handleSubmit} validationSchema={schema}>
             
            <Form >
@@ -51,7 +51,7 @@ export const LoginForm = () => {
                </div>
 
         <Button type="subbmit" >Log In</Button>
-           </Form></Formik>
+           </Form></Formik></Container>
 
     //   <form onSubmit={handleSubmit}
     //        validationschema={schema}

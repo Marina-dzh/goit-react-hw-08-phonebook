@@ -5,7 +5,8 @@ export const Container = styled.div`
     background-color: silver;
     border-radius: 20px;
     padding: 40px;
-    width: 240px;
-   
+    width: 420px;
+    height: fit-content;
+    text-align: center;
    ;
 `

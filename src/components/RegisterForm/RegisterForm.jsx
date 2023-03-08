@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { register } from '../../redux/operations';
 // import css from './RegisterForm.module.css';
-
+import { Container } from "../App/App.styled";
 export const RegisterForm = () => {
   const dispatch = useDispatch();
 
@@ -19,7 +19,8 @@ export const RegisterForm = () => {
     form.reset();
   };
 
-  return (
+    return (
+      <Container>
       <form onSubmit={handleSubmit}
         //   autoComplete="off"
       >
@@ -36,6 +37,6 @@ export const RegisterForm = () => {
         <input type="password" name="password" />
       </label>
       <button type="submit">Register</button>
-    </form>
+    </form></Container>
   );
 };

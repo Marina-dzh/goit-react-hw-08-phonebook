@@ -2,7 +2,7 @@
 import styled from '@emotion/styled'
 export const List = styled.ul`
 margin-top: 16px;
- padding: 0;
+ padding: 0 20px;
  `
 export const Item = styled.div`
  width: 100% ;
@@ -10,6 +10,7 @@ export const Item = styled.div`
     justify-content: space-between;
     align-items:center;
    height: 48px;
+   
    border-bottom: 1px solid black;
 :last-child{
     border: none;

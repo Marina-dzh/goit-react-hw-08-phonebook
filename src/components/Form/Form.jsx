@@ -74,12 +74,3 @@ export const ContactForm = () => {
        )
    }  
 
-// Formik.propTypes = {
-//     onSubmit: PropTypes.func,
-//     initialValues: PropTypes.exact({
-//         name: PropTypes.string,
-//         number: PropTypes.string,
-//     }),
-//     validationSchema:PropTypes.object,
-
-// }

@@ -20,21 +20,8 @@ password:yup.string().required().min(8)
 export const RegisterForm = () => {
   const dispatch = useDispatch();
 
-  // const handleSubmit = e => {
-  //   e.preventDefault();
-  //   const form = e.currentTarget;
-  //   dispatch(
-  //     register({
-  //       name: form.elements.name.value,
-  //       email: form.elements.email.value,
-  //       password: form.elements.password.value,
-  //     })
-  //   );
-  //     console.log(form.elements.name.value,form.elements.email.value,form.elements.password.value)
-  //   form.reset();
-  // };
 const handleSubmit = (values, {resetForm}) => {
-    console.log(values)
+    
     dispatch(
       register(
         values

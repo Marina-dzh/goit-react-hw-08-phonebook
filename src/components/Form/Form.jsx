@@ -1,7 +1,7 @@
 import { Formik, Form,   } from "formik";
 import * as yup from 'yup';
 import "yup-phone";
-import PropTypes from 'prop-types';
+
 import { Input, Error, Button } from "./Form.styled";
 import { useDispatch, useSelector } from "react-redux";
 import { addContact } from "../../redux/operations"

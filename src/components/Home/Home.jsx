@@ -8,10 +8,10 @@ export const HomePage = () => {
           ☎️
         </span>
           
-          <p>"Communication, an essential part of life,<br />
+          <p style={{fontWeight:"600", marginBottom:0}}>"Communication, an essential part of life,<br />
 Enriches relationships and banishes strife,<br />
 The sound of a phone call can bridge the miles,<br />
               Bringing us closer and lighting up our smiles."<br /></p>
-      <span> (by ChatGTP)</span></>
+        <span style={{ fontStyle: "italic", fontSize: "12px" }}> ( by ChatGTP)</span></>
     )
 }

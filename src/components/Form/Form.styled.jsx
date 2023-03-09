@@ -17,12 +17,16 @@ export const Error= styled(ErrorMessage)`
     width: fit-content;
     padding: 2px;
     margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
 `
 export const  Button= styled.button`
     height: 26px;
 border-radius: 4px;
+padding: 5px 10px;
 margin: 20px;
 border: 1px solid;
+font-weight: 700;
  :hover{
     border-color: black;
     background-color:orange;

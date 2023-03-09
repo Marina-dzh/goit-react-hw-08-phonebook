@@ -32,7 +32,7 @@ export const ContactForm = () => {
         // alert(`Oooops, it seems like ${name} is already in contacts. `)
         toast(`Oooops, it seems like ${name} is already in contacts. `, {
           icon: '⚠️',
-          position: "top-left",
+          position: "top-center",
           style: {
             color: "black",
         backgroundColor:"#ffa500"  } 
@@ -74,12 +74,12 @@ export const ContactForm = () => {
        )
    }  
 
-Formik.propTypes = {
-    onSubmit: PropTypes.func,
-    initialValues: PropTypes.exact({
-        name: PropTypes.string,
-        number: PropTypes.string,
-    }),
-    validationSchema:PropTypes.object,
+// Formik.propTypes = {
+//     onSubmit: PropTypes.func,
+//     initialValues: PropTypes.exact({
+//         name: PropTypes.string,
+//         number: PropTypes.string,
+//     }),
+//     validationSchema:PropTypes.object,
 
-}
+// }

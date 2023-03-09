@@ -21,7 +21,8 @@ export default function Contacts() {
     <>
       <Helmet>
         <title>Your phoneBook</title>
-          </Helmet>
+      </Helmet>
+      
                 <Container>
         <h1>PhoneBook</h1>
         <ContactForm />

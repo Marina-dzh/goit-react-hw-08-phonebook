@@ -14,12 +14,12 @@ export const Filter = () => {
     dispatch(setStatusFilter(e.currentTarget.value))
    }
 
-  
+  const clearFilter = (e)=> e.currentTarget.value = ""
  
     return (
        <>
             <Text>Find contacts by name</Text>
-            <Input type="text" onChange={ changeFilter} />
+            <Input type="text" onChange={changeFilter} onBlur={ clearFilter} />
             
         </>     
     )

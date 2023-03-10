@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 import { selectContacts, selectFilter  } from "../../redux/selectors";
 import { useEffect } from "react";
 import { fetchContacts, deleteContact } from "../../redux/operations";
-
+import { setStatusFilter } from "../../redux/filterSlice"
 export const ContactList = ( ) => {
   
     const filterQ = useSelector(selectFilter);
@@ -25,8 +25,9 @@ export const ContactList = ( ) => {
     );
    
     return (
-        <div style={{position:"relative"}}>
-          { visibleContacts.length!==0 && <Filter />}
+        <div style={{ position: "relative" }}>
+            <Filter />
+          {/* { visibleContacts.length !==0  && <Filter />} */}
             {isLoading && <PulseLoader
   color="black"
                 cssOverride={{
@@ -55,7 +56,8 @@ export const ContactList = ( ) => {
 
 const ContactItem = ({ contact:{name, number, id}}) => {
     const dispatch = useDispatch();
-    const handleDelete = () => dispatch(deleteContact(id));
+    const handleDelete = () => dispatch(deleteContact(id), dispatch(setStatusFilter("")));
+    // const handleFilterUpdate =()=> 
     return (
         <Item>
             <div>

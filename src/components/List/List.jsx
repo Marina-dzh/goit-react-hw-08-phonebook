@@ -26,7 +26,7 @@ export const ContactList = ( ) => {
    
     return (
         <div style={{position:"relative"}}>
-            <Filter />
+          { visibleContacts.length!==0 && <Filter />}
             {isLoading && <PulseLoader
   color="black"
                 cssOverride={{

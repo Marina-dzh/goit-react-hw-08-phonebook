@@ -4,6 +4,7 @@ import { Field ,ErrorMessage} from 'formik'
 export const Input = styled(Field)`
 height: 20px;
 width: 200px;
+height: 28px;
 border-radius: 4px;
 border: 1px solid;
    :hover{
